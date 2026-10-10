@@ -1,0 +1,43 @@
+{
+  "task": "Build responsive accessible pricing grid with monthly/annual toggle",
+  "tier": "T2",
+  "generated_at": "2026-10-10T16:20:00Z",
+  "evidence": [
+    {
+      "type": "screenshot",
+      "path": "artifacts/pricing_1440px.png",
+      "observed": "Inspected viewport 1440px: 3 pricing tiers aligned horizontally, contrast ratio 7.2:1, toggle switches between monthly and annual prices smoothly.",
+      "quality": "E3",
+      "tool": "playwright"
+    },
+    {
+      "type": "screenshot",
+      "path": "artifacts/pricing_375px.png",
+      "observed": "Inspected mobile viewport 375px: tiers stack cleanly without horizontal scrollbar; toggle sticky under navbar.",
+      "quality": "E3",
+      "tool": "playwright"
+    },
+    {
+      "type": "test_output",
+      "path": "artifacts/axe_a11y_report.json",
+      "observed": "Ran axe-core automated audit: 0 critical, 0 serious, 0 moderate accessibility violations detected.",
+      "quality": "E3",
+      "tool": "playwright/axe-core"
+    }
+  ],
+  "defects": [
+    {
+      "severity": "minor",
+      "description": "Annual toggle discount badge lacked aria-label for screen readers",
+      "status": "fixed",
+      "evidence_refs": ["artifacts/pricing_1440px.png"]
+    }
+  ],
+  "scores": {
+    "visual_hierarchy": 9,
+    "responsiveness": 10,
+    "accessibility": 10,
+    "code_cleanliness": 9
+  },
+  "unverified_claims": []
+}

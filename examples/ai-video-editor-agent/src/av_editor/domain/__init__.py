@@ -1,0 +1,91 @@
+"""Domain layer: shared Pydantic models for media, evidence, decisions,
+timeline, transcript, vision, audio, pacing, style and QA (§1.6, §5.1)."""
+
+from av_editor.domain.audio import (  # noqa: F401
+    AudioTransient,
+    LoudnessReport,
+    LoudnessSnapshot,
+    PausePolicyEntry,
+    SilenceRegion,
+    VocalActivity,
+)
+from av_editor.domain.evidence import (  # noqa: F401
+    ActionType,
+    AgentResult,
+    AgentTask,
+    DecisionLedgerEntry,
+    EditDecision,
+    Evidence,
+    EvidenceType,
+    PatchProposal,
+    QAViolation,
+    RiskLevel,
+    Severity,
+    TimeRange,
+    TimelineMutation,
+    new_id,
+    utcnow,
+)
+from av_editor.domain.media import (  # noqa: F401
+    AudioStreamInfo,
+    ColorMetadata,
+    MediaAsset,
+    VideoStreamInfo,
+)
+from av_editor.domain.pacing import (  # noqa: F401
+    CutPointCandidate,
+    DeadSpaceScore,
+    HookScore,
+    InterruptNeed,
+    JLCutPlan,
+    NicheAudioStyle,
+    NicheColorStyle,
+    NicheHookStyle,
+    NicheInterruptStyle,
+    NicheStyleProfile,
+    NicheSubtitleStyle,
+    RetentionRisk,
+    ScheduledInterrupt,
+    SourceReference,
+)
+from av_editor.domain.qa import DeterministicCheckResult, InspectionFrame, QACycleReport  # noqa: F401
+from av_editor.domain.timeline import (  # noqa: F401
+    AudioAutomationPoint,
+    AudioBus,
+    CanonicalTimeline,
+    DuckingConfig,
+    ItemEffect,
+    QAStatus,
+    SubtitleCue,
+    SubtitleStyle,
+    SubtitleWord,
+    TimelineItem,
+    TimelineMarker,
+    Track,
+    Transition,
+)
+from av_editor.domain.transcript import (  # noqa: F401
+    EmphasisEvent,
+    PitchPoint,
+    Sentence,
+    TranscriptDocument,
+    TranscriptSegment,
+    TranscriptWord,
+)
+from av_editor.domain.vision import (  # noqa: F401
+    CompositionMetrics,
+    FaceTrack,
+    FlowFrame,
+    FocalPoint,
+    FrameSemanticsBundle,
+    SaliencyMap,
+    ShotBoundary,
+    ShotClassification,
+    ShotFlow,
+    ShotVisualEnergy,
+    VLMComposition,
+    VLMFrameAnalysis,
+    VLMQACritique,
+    VLMQAIssue,
+    VisualEnergySample,
+)

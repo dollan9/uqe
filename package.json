@@ -1,0 +1,31 @@
+{
+  "name": "uqe",
+  "version": "3.2.0",
+  "description": "Universal Quality Engine (UQE) — A cognitive operating system for AI agents.",
+  "main": "bin/uqe.js",
+  "bin": {
+    "uqe": "bin/uqe.js"
+  },
+  "scripts": {
+    "test": "node bin/uqe.js --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dollan9/uqe.git"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "quality",
+    "verification",
+    "cursor",
+    "claude",
+    "windsurf"
+  ],
+  "author": "UQE Contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dollan9/uqe/issues"
+  },
+  "homepage": "https://github.com/dollan9/uqe"
+}

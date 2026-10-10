@@ -1,0 +1,15 @@
+# Compiled/Binary files
+__pycache__/
+*.pyc
+
+# Dependency directories
+node_modules/
+
+# Editor/IDE files
+*.log
+
+# Artifacts & Build
+artifacts/
+*.egg-info/
+dist/
+build/

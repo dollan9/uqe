@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uqe"
+version = "3.2.0"
+description = "Universal Quality Engine (UQE) — A cognitive operating system for AI agents."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "UQE Contributors" }]
+keywords = ["ai", "agents", "quality", "verification", "cursor", "claude", "windsurf"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+tui = ["rich>=13.0.0"]
+dev = ["pytest>=7.0.0", "ruff>=0.1.0"]
+
+[project.scripts]
+uqe = "uqe.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/dollan9/uqe"
+Repository = "https://github.com/dollan9/uqe.git"
+Issues = "https://github.com/dollan9/uqe/issues"
