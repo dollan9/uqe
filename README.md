@@ -213,8 +213,19 @@ The **Universal Quality Engine Benchmark (UQEB)** verifies that an agent runtime
 
 ---
 
+## 🔎 Supported Ecosystem & Search Keywords
+
+UQE functions as an open standard, portable behavioral plugin and quality engine for the entire AI engineering stack:
+
+- **AI Coding Editors & IDEs**: [Cursor](https://cursor.com) (`.cursor/rules/uqe.mdc`), [Windsurf](https://codeium.com/windsurf) (`.windsurf/rules/uqe.md`), VS Code, GitHub Copilot, [Claude Code](https://claude.ai) (`CLAUDE.md`), Gemini CLI (`GEMINI.md`), OpenAI Codex (`AGENTS.md`).
+- **Autonomous Agent Workflows**: Compatible alongside LangGraph, CrewAI, AutoGen, smolagents, MetaGPT, and custom developer pipelines.
+- **Search Tags**: `ai-plugins`, `ai-agents`, `cursorrules`, `cursor-rules`, `claude-code`, `windsurf-rules`, `anti-slop`, `ai-quality-assurance`, `llm-hallucination-prevention`, `evidence-based-ai`, `code-generation-benchmarks`, `developer-tools`.
+
+---
+
 ## 🛡️ License & Contributing
 
 - **License**: [MIT](LICENSE)
 - **Code of Conduct**: [Contributor Covenant 2.1](CODE_OF_CONDUCT.md)
 - **Contributing**: Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
